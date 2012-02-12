@@ -1,0 +1,12 @@
+
+WOPTIONS=-d2 -fp3 -mf -3r -ox -s -w9 -zp4 -zq
+LIB=wlib -c
+CC=wcc386 $(WOPTIONS)
+AS=tasm -ml -t -w2 -z -zi -i$(WATCOM)\LOCAL\H
+LN=wcl386 $(WOPTIONS) -x -fm -l=dos4g
+
+LIBS=\
+        $(WATCOM)\lib386\local.lib    \
+        $(WATCOM)\lib386\vtal.lib
+
+
